@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs') %> 
+
+<body>
+  <%- include('./partials/nav.ejs') %> 
+  <h2>Create Custom Message</h2>
+  <br />
+
+  <form action="/message/custom" method="POST">  
+    <%- include('./partials/selectGuestCompany.ejs') %> 
+    <br />
+    <br />
+    <textarea type="text" id="message" name="message" rows="4" cols="45" placeholder="Custom Message"></textarea>
+    <br />
+    <button type="submit">Submit</button>
+  </form>
+  
+</body>
+
+</html>

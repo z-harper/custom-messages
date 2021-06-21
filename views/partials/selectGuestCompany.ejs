@@ -1,0 +1,19 @@
+<select name="company">
+  <option selected disabled>Select Company</option>
+  <% companies.forEach(company => { %>
+    <option value="<%= company.id %>">
+      <%= company.company %>
+    </option>
+  <% }) %>
+</select>
+
+<select name="guest">
+  <option selected disabled>Select Guest</option>
+  <% guests.forEach(guest => { %>
+    <option value="<%= guest.id %>">
+      <%= guest.firstName %>
+      <%= guest.lastName %>
+      <%= guest.reservation.roomNumber %> 
+    </option>
+  <% }) %>
+</select>

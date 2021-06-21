@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs') %> 
+
+<body>
+  <%- include('./partials/nav.ejs') %> 
+  <div>
+    <h5>Created Message</h5>
+    <p><%= message %> </p>
+    <br />
+
+    <h5>Guest</h5>
+    <p>Person: <%= currentGuest.firstName %> <%= currentGuest.lastName %> </p>
+    <p>Room: <%= currentGuest.reservation.roomNumber %> </p>
+    <br />
+
+    <h5>Company</h5>
+    <p>Name: <%= currentCompany.company %> </p>
+    <p>City: <%= currentCompany.city %> </p>
+    <p>Time zone: <%= currentCompany.timezone %> </p>
+  </div>
+</body>
+
+</html>

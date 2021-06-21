@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs') %> 
+
+<body>
+  <%- include('./partials/nav.ejs') %> 
+  <h2>Create Message from Template</h2>
+  <br />
+
+  <form action="/message/template" method="POST">
+
+    <select name="message">
+      <option selected disabled>Select Message</option>
+      <% messages.forEach(message => { %>
+        <option value="<%= message.type %>">
+          <%= message.type %>
+        </option>
+      <% }) %>
+    </select>
+    
+    <%- include('./partials/selectGuestCompany.ejs') %> 
+    
+    <button type="submit">Submit</button>
+  </form>
+
+  <br />
+  <h3>Example Messages based on Templates</h3>
+
+  <% messages.forEach(message => { %>
+    <h4>
+      <%= message.type %>
+    </h4>
+    <p>
+      <%= message.example %>
+    </p>
+  <% }) %>
+  
+</body>
+
+</html>

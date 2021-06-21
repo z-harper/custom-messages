@@ -22,7 +22,7 @@ lightweight, but also wanted to be able to interact with it with a GUI. That is
 what led to the decision to use Express and EJS, rather than just JavaSCript.
 
 Designed similar to an MVC architecture without the models. Models could be 
-easily implemented for companies and guests. Basic framework set up so that the
+implemented for companies and guests. Basic framework set up so that the
 app can be easily exapnded to include different pages.
 
 ## Languages Used
@@ -42,10 +42,10 @@ were used when sending data to the server. This erases confusion if there are
 guests or companies with the same name. I also included the room number on 
 the guest dropdown to help the user when creating messages.
 
-## What I didn't get to
+## What I didn't get to / would do with more time
 
 I didn't get to styling. It wasn't a requirement, but I could have added it.
 Also, I could have made more message templates. I could have also implemented
 ways for the user to create, update, and delete existing templates. I could 
-have also given the user to have a mass send message instead of individually
-sending messages to each guest.
+have also given the user the option to mass send a message to multiple guests
+at once.

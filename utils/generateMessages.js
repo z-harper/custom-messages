@@ -1,7 +1,3 @@
-/*
-https://stackoverflow.com/questions/29182244/convert-a-string-to-a-template-string
-*/
-
 const templates = require('./messageTemplates');
 
 // Determine greeting to be used based on timezone of company

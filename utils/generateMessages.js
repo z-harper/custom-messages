@@ -4,14 +4,13 @@ const templates = require('./messageTemplates');
 function calculateGreetTime(timezone) {
   const dateTime = new Date().toLocaleString('en-US', {timeZone: timezone});
   const currentHours = new Date(dateTime).getHours();
-  
-  switch (currentHours) {
-    case currentHours >= 4 && currentHours < 12:
-      return 'Good morning';
-    case currentHours >= 12 && currentHours < 18:
-      return 'Good afternoon';
-    default:
-      return 'Good evening';
+
+  if (currentHours >= 4 && currentHours < 12) {
+    return 'Good morning';
+  } else if (currentHours >= 12 && currentHours < 18) {
+    return 'Good afternoon';
+  } else if ((currentHours >= 18 && currentHours < 24) || (currentHours >= 0 && currentHours < 4)) {
+    return 'Good evening';
   }
 }
 

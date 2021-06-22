@@ -2,8 +2,9 @@
 
 ## Ways to run program
 
-Clone project to workspace.
-In the project directory, you can run:
+Clone project to workspace.\
+In the project directory, run npm install to install packages.\
+Then can run either of the below commands to start app.
 
 ### `npm start`
 

@@ -22,7 +22,7 @@ lightweight, but also wanted to be able to interact with it with a GUI. That is\
 what led to the decision to use Express and EJS, rather than just JavaSCript.
 
 Designed similar to an MVC architecture without the models.\
-Models could be implemented for companies and guests. Basic framework set up\ 
+Models could be implemented for companies and guests. Basic framework set up <br /> 
 so that the app can be easily exapnded to include different pages.
 
 ## Languages Used

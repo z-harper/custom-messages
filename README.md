@@ -17,8 +17,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Design decisions
 
-App was designed using Express and EJS. I wanted to keep the project \
-lightweight, but also wanted to be able to interact with it with a GUI. That is \
+App was designed using Express and EJS. I wanted to keep the project\
+lightweight, but also wanted to be able to interact with it with a GUI. That is\
 what led to the decision to use Express and EJS, rather than just JavaSCript.
 
 Designed similar to an MVC architecture without the models. Models could be \ 
